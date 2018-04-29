@@ -25,7 +25,7 @@ namespace tdd
             for (int i = 0; i < 9; i++)
             {
                 positionsX.Add(false);
-                positionsY.Add(true);
+                positionsY.Add(false);
             }
             turn = true;
         }
