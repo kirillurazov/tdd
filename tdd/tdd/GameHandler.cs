@@ -27,7 +27,11 @@ namespace tdd
                 positionsX.Add(false);
                 positionsY.Add(false);
             }
-            turn = true;            
+            turn = true;
+        }
+        public bool ifWinner(List<bool> pos)
+        {
+            return true;
         }
 
     }
