@@ -103,12 +103,22 @@ namespace UnitTest
             Assert.IsFalse(gameHandler.positionsY[7]);
         }
         [TestMethod]
-        public void TestGameIfWinner()
+        public void TestGameIfWinner1()
         {
             GameHandler gameHandler = new GameHandler("", "");
             gameHandler.positionsX = new List<bool>() { false, true, false,
                                                  false, true, false,
                                                  false, true, false };
+            bool ifwin = gameHandler.ifWinner(gameHandler.positionsX);
+            Assert.IsTrue(ifwin);
+        }
+        [TestMethod]
+        public void TestGameIfWinner2()
+        {
+            GameHandler gameHandler = new GameHandler("", "");
+            gameHandler.positionsX = new List<bool>() { true, false, false,
+                                                        false, true, false,
+                                                        false, false, true };
             bool ifwin = gameHandler.ifWinner(gameHandler.positionsX);
             Assert.IsTrue(ifwin);
         }
