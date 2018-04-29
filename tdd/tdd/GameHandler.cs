@@ -39,6 +39,8 @@ namespace tdd
                 return true;
             else if (pos[0] == true && pos[0] == pos[3] && pos[3] == pos[6])
                 return true;
+            else if (pos[0] == true && pos[0] == pos[1] && pos[1] == pos[2])
+                return true;
 
             return false;
         }
