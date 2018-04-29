@@ -6,5 +6,8 @@ using System.Threading.Tasks;
 
 namespace tdd
 {
-    
+    public class GameHandler
+    {
+
+    }
 }

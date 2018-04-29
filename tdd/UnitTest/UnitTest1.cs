@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using tdd;
 
 namespace UnitTest
 {
@@ -7,8 +8,10 @@ namespace UnitTest
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestGameHandler()
         {
+            GameHandler game = new GameHandler();
+            Assert.IsNotNull(game);
         }
     }
 }
