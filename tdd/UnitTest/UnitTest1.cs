@@ -95,6 +95,12 @@ namespace UnitTest
             GameHandler gameHandler = new GameHandler("", "");
             Assert.IsFalse(gameHandler.positionsX[3]);
         }
+        [TestMethod]
+        public void TestGameRandomXPositionY()
+        {
+            GameHandler gameHandler = new GameHandler("", "");
+            Assert.IsFalse(gameHandler.positionsY[7]);
+        }
     }
 
 }
