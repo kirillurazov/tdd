@@ -8,6 +8,9 @@ namespace tdd
 {
     public class GameHandler
     {
+        public GameHandler()
+        {
 
+        }
     }
 }
