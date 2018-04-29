@@ -15,6 +15,7 @@ namespace tdd
         }
         public List<bool> positionsX, positionsY;
         public bool turn;
+        public int stroke;
 
         public GameHandler(String name1, String name2)
         {
@@ -22,12 +23,27 @@ namespace tdd
             player2 = new Player(name2);
             positionsX = new List<bool>();
             positionsY = new List<bool>();
+            stroke = 0;
             for (int i = 0; i < 9; i++)
             {
                 positionsX.Add(false);
                 positionsY.Add(false);
             }
             turn = true;
+        }
+        public GameHandler(String name1, String name2, bool t, int p1, int p2)
+        {
+            player1 = new Player(name1, p1);
+            player2 = new Player(name2, p2);
+            positionsX = new List<bool>();
+            positionsY = new List<bool>();
+            stroke = 0;
+            for (int i = 0; i < 9; i++)
+            {
+                positionsX.Add(false);
+                positionsY.Add(false);
+            }
+            turn = t;
         }
         public bool ifWinner(List<bool> pos)
         {
@@ -47,6 +63,8 @@ namespace tdd
                 return true;
             else if (pos[6] == true && pos[6] == pos[7] && pos[7] == pos[8])
                 return true;
+            else if (pos[2] == true && pos[2] == pos[4] && pos[4] == pos[6])
+                return true;
             return false;
         }
 
@@ -55,9 +73,16 @@ namespace tdd
     public class Player
     {
         private String name;
+        public int points;
         public Player(String name)
         {
             this.name = name;
+            points = 0;
+        }
+        public Player(String name, int p)
+        {
+            this.name = name;
+            points = p;
         }
         public Player() { }
         public String getName()
