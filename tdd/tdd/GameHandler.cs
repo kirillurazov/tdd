@@ -8,6 +8,7 @@ namespace tdd
 {
     public class GameHandler
     {
+        public Player player1;
         public GameHandler()
         {
 
@@ -15,7 +16,7 @@ namespace tdd
 
         public GameHandler(String name1, String name2)
         {
-            
+            player1 = new Player(name1);
         }
     }
 
