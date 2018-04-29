@@ -132,6 +132,16 @@ namespace UnitTest
             bool ifwin = gameHandler.ifWinner(gameHandler.positionsX);
             Assert.IsTrue(ifwin);
         }
+        [TestMethod]
+        public void TestGameIfWinner4()
+        {
+            GameHandler gameHandler = new GameHandler("", "");
+            gameHandler.positionsX = new List<bool>() { true, false, false,
+                                                        true, false, false,
+                                                        true, false, false };
+            bool ifwin = gameHandler.ifWinner(gameHandler.positionsX);
+            Assert.IsTrue(ifwin);
+        }
     }
 
 }
