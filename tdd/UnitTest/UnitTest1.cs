@@ -26,5 +26,12 @@ namespace UnitTest
             string name = player.name;
             Assert.AreEqual(name, "name");
         }
+        [TestMethod]
+        public void TestPlayerGettername()
+        {
+            Player player = new Player("програмуктер");
+            string name = player.getName();
+            Assert.AreEqual(name, "програмуктер");
+        }
     }
 }
