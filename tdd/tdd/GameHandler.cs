@@ -13,4 +13,9 @@ namespace tdd
 
         }
     }
+
+    public class Player
+    {
+        private String name;
+    }
 }
