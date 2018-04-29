@@ -44,6 +44,7 @@ namespace tdd
         private void buttonStart_Click(object sender, EventArgs e)
         {
             ifVisible(false);
+            game = new GameHandler(textBoxName1.Text, textBoxName2.Text);
         }
 
         private void buttonRefresh_Click(object sender, EventArgs e)
