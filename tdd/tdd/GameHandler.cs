@@ -24,7 +24,7 @@ namespace tdd
             positionsY = new List<bool>();
             for (int i = 0; i < 9; i++)
             {
-                positionsX.Add(true);
+                positionsX.Add(false);
                 positionsY.Add(true);
             }
             turn = true;
