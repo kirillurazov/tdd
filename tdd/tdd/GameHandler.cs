@@ -21,6 +21,10 @@ namespace tdd
             player2 = new Player(name2);
             positionsX = new List<bool>();
             positionsY = new List<bool>();
+            for(int i = 0; i<9;i++)
+            {
+                positionsX[i] = false;
+            }
         }
     }
 
