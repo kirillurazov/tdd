@@ -63,6 +63,13 @@ namespace UnitTest
             GameHandler gameHandler = new GameHandler("", "");
             Assert.IsNotNull(gameHandler.positionsY);
         }
+        [TestMethod]
+        public void TestGamePositionsListCountX()
+        {
+            GameHandler gameHandler = new GameHandler("", "");
+            int expected = gameHandler.positionsX.Count;
+            Assert.AreEqual(9, expected);
+        }
     }
 
 }
