@@ -70,6 +70,13 @@ namespace UnitTest
             int expected = gameHandler.positionsX.Count;
             Assert.AreEqual(9, expected);
         }
+        [TestMethod]
+        public void TestGamePositionsListCountY()
+        {
+            GameHandler gameHandler = new GameHandler("", "");
+            int expected = gameHandler.positionsY.Count;
+            Assert.AreEqual(9, expected);
+        }
     }
 
 }
