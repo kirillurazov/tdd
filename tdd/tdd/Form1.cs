@@ -51,5 +51,10 @@ namespace tdd
         {
             ifVisible(true);
         }
+
+        private void button_click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

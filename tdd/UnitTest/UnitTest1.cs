@@ -77,6 +77,12 @@ namespace UnitTest
             int expected = gameHandler.positionsY.Count;
             Assert.AreEqual(9, expected);
         }
+        [TestMethod]
+        public void TestGameTurn()
+        {
+            GameHandler gameHandler = new GameHandler("", "");
+            Assert.IsNotNull(gameHandler.turn);
+        }
     }
 
 }
