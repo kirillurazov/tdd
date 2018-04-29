@@ -27,8 +27,9 @@ namespace tdd
                 positionsX.Add(false);
                 positionsY.Add(false);
             }
-            turn = true;
+            turn = true;            
         }
+
     }
 
     public class Player

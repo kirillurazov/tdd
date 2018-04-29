@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using tdd;
 
@@ -100,6 +101,16 @@ namespace UnitTest
         {
             GameHandler gameHandler = new GameHandler("", "");
             Assert.IsFalse(gameHandler.positionsY[7]);
+        }
+        [TestMethod]
+        public void TestGameIfWinner()
+        {
+            GameHandler gameHandler = new GameHandler("", "");
+            gameHandler.positionsX = new List<bool>() { false, true, false,
+                                                 false, true, false,
+                                                 false, true, false };
+            bool ifwin = gameHandler.ifWinner(gameHandler.positionsX);
+            Assert.IsTrue(ifwin);
         }
     }
 
