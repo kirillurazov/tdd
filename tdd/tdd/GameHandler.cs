@@ -31,6 +31,8 @@ namespace tdd
         }
         public bool ifWinner(List<bool> pos)
         {
+            if (pos.Count != 9)
+                return false;
             if (pos[0] == true && pos[0] == pos[4] && pos[4] == pos[8])
                 return true;
             else if (pos[1] == true && pos[1] == pos[4] && pos[4] == pos[7]) 
@@ -43,7 +45,8 @@ namespace tdd
                 return true;
             else if (pos[3] == true && pos[3] == pos[4] && pos[4] == pos[5])
                 return true;
-
+            else if (pos[6] == true && pos[6] == pos[7] && pos[7] == pos[8])
+                return true;
             return false;
         }
 
