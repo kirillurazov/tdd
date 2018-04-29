@@ -19,13 +19,13 @@ namespace UnitTest
             Player player = new Player();
             Assert.IsNotNull(player);
         }
-        [TestMethod]
+        /*[TestMethod]
         public void TestPlayerCreateWithName()
         {
             Player player = new Player("name");
             string name = player.name;
             Assert.AreEqual(name, "name");
-        }
+        }*/
         [TestMethod]
         public void TestPlayerGettername()
         {
