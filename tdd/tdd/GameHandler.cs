@@ -27,6 +27,7 @@ namespace tdd
                 positionsX.Add(true);
                 positionsY.Add(true);
             }
+            turn = true;
         }
     }
 
