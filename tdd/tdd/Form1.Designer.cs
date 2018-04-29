@@ -30,9 +30,9 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxName1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxName2 = new System.Windows.Forms.TextBox();
             this.buttonStart = new System.Windows.Forms.Button();
             this.buttonRefresh = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -44,6 +44,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.labelTurn = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -63,12 +64,12 @@
             this.label2.Size = new System.Drawing.Size(0, 17);
             this.label2.TabIndex = 0;
             // 
-            // textBox1
+            // textBoxName1
             // 
-            this.textBox1.Location = new System.Drawing.Point(64, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 1;
+            this.textBoxName1.Location = new System.Drawing.Point(64, 17);
+            this.textBoxName1.Name = "textBoxName1";
+            this.textBoxName1.Size = new System.Drawing.Size(100, 22);
+            this.textBoxName1.TabIndex = 1;
             // 
             // label3
             // 
@@ -79,12 +80,12 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Игрок 2";
             // 
-            // textBox2
+            // textBoxName2
             // 
-            this.textBox2.Location = new System.Drawing.Point(64, 43);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 1;
+            this.textBoxName2.Location = new System.Drawing.Point(64, 43);
+            this.textBoxName2.Name = "textBoxName2";
+            this.textBoxName2.Size = new System.Drawing.Size(100, 22);
+            this.textBoxName2.TabIndex = 1;
             // 
             // buttonStart
             // 
@@ -94,6 +95,7 @@
             this.buttonStart.TabIndex = 2;
             this.buttonStart.Text = "Старт";
             this.buttonStart.UseVisualStyleBackColor = true;
+            this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
             // 
             // buttonRefresh
             // 
@@ -103,6 +105,7 @@
             this.buttonRefresh.TabIndex = 3;
             this.buttonRefresh.Text = "Заново";
             this.buttonRefresh.UseVisualStyleBackColor = true;
+            this.buttonRefresh.Click += new System.EventHandler(this.buttonRefresh_Click);
             // 
             // button1
             // 
@@ -176,11 +179,21 @@
             this.button9.TabIndex = 4;
             this.button9.UseVisualStyleBackColor = true;
             // 
+            // labelTurn
+            // 
+            this.labelTurn.AutoSize = true;
+            this.labelTurn.Location = new System.Drawing.Point(248, 71);
+            this.labelTurn.Name = "labelTurn";
+            this.labelTurn.Size = new System.Drawing.Size(100, 17);
+            this.labelTurn.TabIndex = 5;
+            this.labelTurn.Text = "Ходит игрок 1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(577, 435);
+            this.Controls.Add(this.labelTurn);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button3);
@@ -192,13 +205,14 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonRefresh);
             this.Controls.Add(this.buttonStart);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxName2);
+            this.Controls.Add(this.textBoxName1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,9 +222,9 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxName1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxName2;
         private System.Windows.Forms.Button buttonStart;
         private System.Windows.Forms.Button buttonRefresh;
         private System.Windows.Forms.Button button1;
@@ -222,6 +236,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Label labelTurn;
     }
 }
 
