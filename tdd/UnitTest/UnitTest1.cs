@@ -33,5 +33,12 @@ namespace UnitTest
             string name = player.getName();
             Assert.AreEqual(name, "програмуктер");
         }
+        [TestMethod]
+        public void TestGameConstructorWithNames()
+        {
+            GameHandler gameHandler = new GameHandler("", "");
+            Assert.IsNotNull(gameHandler);
+        }
     }
+
 }
