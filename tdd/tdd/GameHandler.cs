@@ -12,6 +12,10 @@ namespace tdd
         {
 
         }
+        public GameHandler(String name1, String name2)
+        {
+
+        }
     }
 
     public class Player
