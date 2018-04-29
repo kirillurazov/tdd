@@ -14,6 +14,7 @@ namespace tdd
 
         }
         public List<bool> positionsX, positionsY;
+        public bool turn;
 
         public GameHandler(String name1, String name2)
         {
