@@ -24,7 +24,7 @@ namespace tdd
         public Player() { }
         public String getName()
         {
-            return "програмуктер";
+            return name;
         }
 
     }
