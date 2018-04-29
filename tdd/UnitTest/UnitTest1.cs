@@ -51,6 +51,12 @@ namespace UnitTest
             GameHandler gameHandler = new GameHandler("", "");
             Assert.IsNotNull(gameHandler.player2);
         }
+        [TestMethod]
+        public void TestGamePositionsListX()
+        {
+            GameHandler gameHandler = new GameHandler("", "");
+            Assert.IsNotNull(gameHandler.positionsX);
+        }
     }
 
 }
