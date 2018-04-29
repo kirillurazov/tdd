@@ -83,6 +83,12 @@ namespace UnitTest
             GameHandler gameHandler = new GameHandler("", "");
             Assert.IsNotNull(gameHandler.turn);
         }
+        [TestMethod]
+        public void TestGameTurnInconstructor()
+        {
+            GameHandler gameHandler = new GameHandler("", "");
+            Assert.IsTrue(gameHandler.turn);
+        }
     }
 
 }
