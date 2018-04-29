@@ -13,13 +13,14 @@ namespace tdd
         {
 
         }
-        public List<bool> positionsX;
+        public List<bool> positionsX, positionsY;
 
         public GameHandler(String name1, String name2)
         {
             player1 = new Player(name1);
             player2 = new Player(name2);
             positionsX = new List<bool>();
+            positionsY = new List<bool>();
         }
     }
 
